@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Desain Grafis | Portfolio Kreatif</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h2>Zumar<span>Gallery</span></h2>
+            </div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#home" class="nav-item active" data-page="home"><i class="fas fa-home"></i> <span>Home</span></a></li>
+                <li><a href="#portofolio" class="nav-item" data-page="portofolio"><i class="fas fa-briefcase"></i> <span>Portofolio</span></a></li>
+                <li><a href="#hasilkarya" class="nav-item" data-page="hasilkarya"><i class="fas fa-images"></i> <span>Hasil Karya</span></a></li>
+                <li><a href="#telahbekerjasama" class="nav-item" data-page="telahbekerjasama"><i class="fas fa-handshake"></i> <span>Telah Bekerjasama</span></a></li>
+                <li><a href="#sponsor" class="nav-item" data-page="sponsor"><i class="fas fa-star"></i> <span>Sponsor</span></a></li>
+                <li><a href="#testimoni" class="nav-item" data-page="testimoni"><i class="fas fa-comment-dots"></i> <span>Testimoni</span></a></li>
+                <li><a href="#kontak" class="nav-item" data-page="kontak"><i class="fas fa-envelope"></i> <span>Kontak</span></a></li>
+            </ul>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <div class="social-icons">
+                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://dribbble.com" target="_blank" title="Dribbble"><i class="fab fa-dribbble"></i></a>
+                <a href="https://behance.net" target="_blank" title="Behance"><i class="fab fa-behance"></i></a>
+                <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 DesignGallery</p>
+                <p>All rights reserved</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="page active">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-title">Membuat <span class="highlight">Desain</span> yang <span class="highlight">Menginspirasi</span></h1>
+                    <p class="hero-subtitle">Mengubah ide menjadi visual yang memukau dengan sentuhan kreativitas dan profesionalisme</p>
+                    <a href="#hasilkarya" class="cta-button">Jelajahi Karya <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-count="347">0</h3>
+                            <p class="stat-label">Desain Terjual</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-smile"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-count="98">0</h3>
+                            <p class="stat-label">Kepuasan Client</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-count="5">0</h3>
+                            <p class="stat-label">Tahun Pengalaman</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-count="24">0</h3>
+                            <p class="stat-label">Penghargaan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trending-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-fire"></i> Desain Sedang Trending</h2>
+                    <a href="#hasilkarya" class="view-all">Lihat Semua Hasil Karya <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="trending-grid">
+                    <div class="trending-item">
+                        <div class="trending-img">
+                            <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Desain Poster Konser">
+                            <div class="trending-overlay">
+                                <span class="trending-badge">Trending #1</span>
+                            </div>
+                        </div>
+                        <div class="trending-info">
+                            <h3>Poster Konser Musik</h3>
+                            <p>Desain bold dengan warna neon</p>
+                            <div class="trending-stats">
+                                <span><i class="fas fa-eye"></i> <span class="view-count" data-views="2400">2.4k</span></span>
+                                <span><i class="fas fa-heart"></i> 189</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="trending-item">
+                        <div class="trending-img">
+                            <img src="https://images.unsplash.com/photo-1586717799252-bd134ad00e26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Brand Identity">
+                            <div class="trending-overlay">
+                                <span class="trending-badge">Trending #2</span>
+                            </div>
+                        </div>
+                        <div class="trending-info">
+                            <h3>Brand Identity</h3>
+                            <p>Logo & identitas untuk startup</p>
+                            <div class="trending-stats">
+                                <span><i class="fas fa-eye"></i> <span class="view-count" data-views="1800">1.8k</span></span>
+                                <span><i class="fas fa-heart"></i> 142</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="trending-item">
+                        <div class="trending-img">
+                            <img src="https://images.unsplash.com/photo-1602576666092-9c5a3f3e3b71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="UI/UX Design">
+                            <div class="trending-overlay">
+                                <span class="trending-badge">Trending #3</span>
+                            </div>
+                        </div>
+                        <div class="trending-info">
+                            <h3>UI/UX Aplikasi Mobile</h3>
+                            <p>Dashboard dengan tampilan minimalis</p>
+                            <div class="trending-stats">
+                                <span><i class="fas fa-eye"></i> <span class="view-count" data-views="1500">1.5k</span></span>
+                                <span><i class="fas fa-heart"></i> 117</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portofolio" class="page">
+            <div class="section-header">
+                <h2><i class="fas fa-user"></i> Portofolio Singkat</h2>
+                <p>Perjalanan kreatif saya dalam dunia desain grafis</p>
+            </div>
+            
+            <div class="portfolio-container">
+                <div class="portfolio-card">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Profil Desainer">
+                    </div>
+                    <div class="portfolio-info">
+                        <h2>Andhika Pratama</h2>
+                        <h3>Desainer Grafis & Visual Artist</h3>
+                        <p>Dengan lebih dari 5 tahun pengalaman di industri desain, saya telah membantu ratusan klien dari berbagai bidang untuk mewujudkan visi mereka melalui desain yang menarik dan efektif. Spesialisasi saya mencakup brand identity, ilustrasi digital, dan UI/UX design.</p>
+                        
+                        <div class="skills">
+                            <h4>Keahlian:</h4>
+                            <div class="skill-tags">
+                                <span>Adobe Photoshop</span>
+                                <span>Adobe Illustrator</span>
+                                <span>Figma</span>
+                                <span>Adobe After Effects</span>
+                                <span>Blender 3D</span>
+                                <span>Typography</span>
+                            </div>
+                        </div>
+                        
+                        <div class="experience">
+                            <h4>Pengalaman Kerja:</h4>
+                            <ul>
+                                <li><strong>Senior Designer</strong> - Creative Agency (2020-Sekarang)</li>
+                                <li><strong>Freelance Designer</strong> - Platform Online (2018-2020)</li>
+                                <li><strong>Graphic Designer</strong> - Startup Tech (2017-2018)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="portfolio-contact">
+                            <a href="https://wa.me/6285161808524" target="_blank" class="contact-button"><i class="fab fa-whatsapp"></i> Hubungi Saya</a>
+                            <a href="#testimoni" class="contact-button secondary"><i class="fas fa-star"></i> Lihat Testimoni</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hasil Karya Section -->
+        <section id="hasilkarya" class="page">
+            <div class="section-header">
+                <h2><i class="fas fa-images"></i> Hasil Karya</h2>
+                <p>Koleksi desain grafis dalam berbagai kategori</p>
+            </div>
+            
+            <div class="category-filter">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="pengajian">Desain Pengajian</button>
+                <button class="filter-btn" data-filter="undangan">Undangan</button>
+                <button class="filter-btn" data-filter="cv">CV & Portofolio</button>
+                <button class="filter-btn" data-filter="poster">Poster</button>
+                <button class="filter-btn" data-filter="logo">Logo</button>
+                <button class="filter-btn" data-filter="uiux">UI/UX</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Items akan diisi oleh JavaScript -->
+            </div>
+        </section>
+
+        <!-- Detail Modal -->
+        <div id="detailModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-close-container">
+                    <button class="close-modal" id="closeModalBtn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Detail akan diisi oleh JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Telah Bekerjasama Section -->
+        <section id="telahbekerjasama" class="page">
+            <div class="section-header">
+                <h2><i class="fas fa-handshake"></i> Telah Bekerjasama</h2>
+                <p>Klien dan partner yang telah mempercayai karya saya</p>
+            </div>
+            
+            <div class="clients-grid">
+                <!-- Items akan diisi oleh JavaScript -->
+            </div>
+        </section>
+
+        <!-- Sponsor Section -->
+        <section id="sponsor" class="page">
+            <div class="section-header">
+                <h2><i class="fas fa-star"></i> Program Sponsorship</h2>
+                <p>Dukung kreativitas dan dapatkan eksposur untuk brand Anda</p>
+            </div>
+            
+            <div class="sponsor-container">
+                <div class="sponsor-intro">
+                    <h3><i class="fas fa-question-circle"></i> Mengapa Mensponsori?</h3>
+                    <p>Dengan menjadi sponsor, Anda tidak hanya mendukung karya kreatif, tetapi juga mendapatkan eksposur yang luas di platform digital. Desain yang menarik akan mempromosikan brand Anda kepada audiens yang tepat.</p>
+                    
+                    <div class="benefits">
+                        <div class="benefit">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Eksposur Brand</h4>
+                            <p>Desain yang menarik akan dilihat ribuan pengunjung setiap bulan.</p>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-users"></i>
+                            <h4>Audience Targeting</h4>
+                            <p>Menjangkau audiens kreatif dan profesional yang potensial.</p>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-heart"></i>
+                            <h4>Dukungan Kreatif</h4>
+                            <p>Mendukung ekosistem kreatif dan mendapatkan konten berkualitas.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sponsor-process">
+                    <h3><i class="fas fa-list-ol"></i> Proses Sponsorship</h3>
+                    <ol class="process-steps">
+                        <li><strong>Ajukan Proposal</strong> - Isi formulir di bawah ini</li>
+                        <li><strong>Review</strong> - Kami akan meninjau proposal Anda</li>
+                        <li><strong>Konsultasi</strong> - Diskusi detail kerjasama</li>
+                        <li><strong>Persetujuan</strong> - Kesepakatan kontrak sponsorship</li>
+                        <li><strong>Eksekusi</strong> - Implementasi dan promosi</li>
+                        <li><strong>Evaluasi</strong> - Laporan hasil dan feedback</li>
+                    </ol>
+                </div>
+                
+                <div class="sponsor-form-container">
+                    <h3><i class="fas fa-paper-plane"></i> Ajukan Proposal Sponsorship</h3>
+                    <form id="sponsorForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap *</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Nomor Telepon *</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Nama Perusahaan/Organisasi *</label>
+                                <input type="text" id="company" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="sponsorType">Jenis Sponsor *</label>
+                            <select id="sponsorType" required>
+                                <option value="" disabled selected>Pilih jenis sponsor</option>
+                                <option value="platinum">Platinum Sponsor</option>
+                                <option value="gold">Gold Sponsor</option>
+                                <option value="silver">Silver Sponsor</option>
+                                <option value="media">Media Partner</option>
+                                <option value="produk">Sponsor Produk</option>
+                                <option value="lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="projectDesc">Deskripsi Proyek *</label>
+                            <textarea id="projectDesc" rows="4" required placeholder="Jelaskan proyek, tujuan sponsorship, dan harapan Anda..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="proposalFile">Unggah Proposal (PDF/DOC) *</label>
+                            <input type="file" id="proposalFile" accept=".pdf,.doc,.docx" required>
+                            <small>Maksimum ukuran file: 5MB</small>
+                        </div>
+                        
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="agreeTerms" required>
+                            <label for="agreeTerms">Saya setuju dengan syarat dan ketentuan sponsorship</label>
+                        </div>
+                        
+                        <button type="submit" id="submitBtn" class="submit-btn" disabled>
+                            <i class="fab fa-whatsapp"></i> Kirim Proposal via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimoni Section -->
+        <section id="testimoni" class="page">
+            <div class="section-header">
+                <h2><i class="fas fa-comment-dots"></i> Testimoni Klien</h2>
+                <p>Apa kata mereka tentang karya dan pelayanan saya</p>
+            </div>
+            
+            <div class="testimonials">
+                <!-- Testimoni akan diisi oleh JavaScript -->
+            </div>
+        </section>
+
+        <!-- Kontak Section -->
+        <section id="kontak" class="page">
+            <div class="section-header">
+                <h2><i class="fas fa-envelope"></i> Hubungi Saya</h2>
+                <p>Siap untuk mewujudkan ide desain Anda? Mari berbicara!</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Telepon / WhatsApp</h3>
+                            <p>085161808524</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>hello@designgallery.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Lokasi</h3>
+                            <p>Jakarta, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Jam Kerja</h3>
+                            <p>Senin - Jumat: 09:00 - 18:00</p>
+                            <p>Sabtu: 10:00 - 15:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Kirim Pesan Langsung</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">Nama *</label>
+                            <input type="text" id="contactName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email *</label>
+                            <input type="email" id="contactEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subjek *</label>
+                            <input type="text" id="contactSubject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Pesan *</label>
+                            <textarea id="contactMessage" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="main-footer">
+            <p>DesignGallery &copy; 2023. Semua hak cipta dilindungi.</p>
+            <p>Dibuat dengan <i class="fas fa-heart"></i> untuk dunia kreatif</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
