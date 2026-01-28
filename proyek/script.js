@@ -1,3 +1,62 @@
+// ============ AUTO-LOAD DATA FROM GITHUB ============
+async function loadDataFromGitHub() {
+    try {
+        // URL ke data.json di GitHub
+        const dataUrl = 'https://raw.githubusercontent.com/USERNAME/REPO-NAME/main/data.json';
+        
+        const response = await fetch(dataUrl);
+        if (!response.ok) throw new Error('Data tidak ditemukan');
+        
+        const data = await response.json();
+        
+        // Update hero section
+        if (data.hero) {
+            const heroTitle = document.querySelector('.hero-title');
+            if (heroTitle) heroTitle.innerHTML = data.hero.title;
+            
+            const heroSubtitle = document.querySelector('.hero-subtitle');
+            if (heroSubtitle) heroSubtitle.textContent = data.hero.subtitle;
+            
+            // Update stats
+            const statNumbers = document.querySelectorAll('.stat-number');
+            if (statNumbers.length >= 4 && data.hero.stats) {
+                statNumbers.forEach((stat, index) => {
+                    if (data.hero.stats[index]) {
+                        stat.textContent = data.hero.stats[index].number;
+                        stat.nextElementSibling.textContent = data.hero.stats[index].label;
+                    }
+                });
+            }
+        }
+        
+        // Update gallery
+        if (data.gallery && data.gallery.length > 0) {
+            galleryData = data.gallery;
+            renderGallery('all');
+        }
+        
+        // Update other sections...
+        
+        console.log('✅ Data portfolio terupdate dari GitHub!');
+        
+    } catch (error) {
+        console.log('ℹ️ Menggunakan data lokal:', error.message);
+        // Fallback to local data
+    }
+}
+
+// Load data saat halaman dibuka
+document.addEventListener('DOMContentLoaded', function() {
+    // Panggil fungsi asli dulu
+    initPage();
+    
+    // Kemudian load dari GitHub
+    setTimeout(loadDataFromGitHub, 1000);
+});
+
+
+
+
 // Inisialisasi data untuk galeri dengan view counter
 const galleryData = [
     {
