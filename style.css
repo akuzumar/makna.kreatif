@@ -33,33 +33,56 @@ body {
 }
 
 /* Mobile Menu Button - TOGGLE YANG MUDAH DIKENALI */
+/* Update Mobile Menu Button */
 .mobile-menu-btn {
-    display: none;
     position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 56px;
-    height: 56px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, var(--primary), #8A84FF);
-    color: white;
-    border: none;
-    font-size: 24px;
-    z-index: 1000;
-    cursor: pointer;
-    box-shadow: var(--glow);
-    transition: var(--transition);
+    top: 15px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: rgba(42, 34, 158, 0.361);
+    border: 2px solid rgba(170, 159, 236, 0.855);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: none; /* SEMBUNYI DI DESKTOP */
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 20px;
+    z-index: 1000;
+    flex-shrink: 0;
 }
 
+/* Animasi Berputar Icon di dalamnya */
+.mobile-menu-btn i {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Saat aktif (sidebar terbuka), icon berputar */
+.mobile-menu-btn.active i {
+    transform: rotate(90deg);
+}
+
+/* Hanya muncul di HP/Tablet */
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: flex; /* MUNCUL HANYA DI LAYAR KECIL */
+    }
+}
+
+
+/* Tambahkan efek hover agar sama dengan sidebar */
 .mobile-menu-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 25px rgba(108, 99, 255, 0.5);
+    background: var(--primary); /* Berubah ungu saat disentuh */
 }
 
 .mobile-menu-btn:active {
     transform: scale(0.95);
+}
+/* Jika sidebar punya class 'mobile-open' (cek script.js kamu), maka tombol utama disembunyikan */
+.sidebar.mobile-open ~ .mobile-menu-btn {
+    display: none !important;
 }
 
 /* Sidebar Styles */
